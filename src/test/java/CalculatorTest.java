@@ -39,4 +39,10 @@ class CalculatorTest {
         assertEquals(1, Calculator.divide(1, 1)); // Giá trị biên
         assertThrows(IllegalArgumentException.class, () -> Calculator.divide(1, 0)); // Giá trị không hợp lệ
     }
+
+    // Kiểm thử ngoại lệ cho phương thức divide
+    @Test
+    void testDivideByZero() {
+        assertThrows(IllegalArgumentException.class, () -> Calculator.divide(5, 0), "Division by zero should throw an exception");
+    }
 }
