@@ -1,4 +1,4 @@
-# Unit Testing with Java: A Calculator Application
+# Unit Testing with Java: A org.example.Calculator Application
 
 This repository demonstrates the use of **JUnit** for unit testing in Java through a simple calculator application. It includes the implementation of basic arithmetic operations and corresponding test cases to validate functionality.
 
@@ -10,7 +10,7 @@ The purpose of this project is to:
 - Provide a foundation for building robust Java applications with test coverage.
 
 ## Features
-- **Simple Calculator Class**: Implements basic arithmetic operations.
+- **Simple org.example.Calculator Class**: Implements basic arithmetic operations.
 - **JUnit Test Cases**: Ensures correctness of implemented methods.
 
 ---
@@ -25,13 +25,13 @@ The purpose of this project is to:
 
 ## Source Code
 
-### Main Class: Calculator
+### Main Class: org.example.Calculator
 
-The `Calculator` class provides a simple implementation of an addition operation.  
+The `org.example.Calculator` class provides a simple implementation of an addition operation.  
 More operations (e.g., subtraction, multiplication, division) can be added easily.
 
 ```java
-public class Calculator {
+public class org.example.Calculator {
     public int add(int a, int b) {
         return a + b;
     }
@@ -39,7 +39,10 @@ public class Calculator {
 ```
 
 ### Test Class
+
 ```java
+import org.example.Calculator;
+
 class CalculatorTest {
     @Test
     @DisplayName("Add two numbers")
